@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axiosWithAuth from "../authentication/axiosWithAuth";
+import img from './fire.jpeg';
 
 function Dashboard() {
   const [array, setArray] = useState([]);
@@ -314,6 +315,7 @@ console.log('CARD', card, 'selected', selected)
         <div style={{width: '30%', height: '30%', borderBottom: '10px solid red'}}></div>
         <div style={{width: '30%', height: '30%', backgroundColor: 'transparent'}}></div>
       </div>    */}
+      {/* <div style={{height: '20px', width: '20px'}}><img style={{width: '100px'}}src={img}/></div> */}
     </div>
   )
 }

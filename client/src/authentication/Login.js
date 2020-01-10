@@ -52,7 +52,8 @@ export default function Login(props)  {
           textAlign: "center",
           background: "black",
           height: "620px",
-          width: "100%"
+          width: "100%",
+          height: '100vh'
         }} onSubmit={(e) => submitHandler(e, state)}>
                     <div>
                     <Title> Sign in to your account </Title>

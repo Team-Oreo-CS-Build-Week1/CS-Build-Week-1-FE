@@ -44,7 +44,8 @@ export default function Register(props) {
           textAlign: "center",
           background: "black",
           height: "620px",
-          width: "100%"
+          width: "100%",
+          height: '100vh'
         }}
       >
         <div className="register-text">
