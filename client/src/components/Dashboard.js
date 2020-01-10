@@ -293,11 +293,11 @@ function Card({card, selected}) {
 console.log('CARD', card, 'selected', selected)
   return (
     <div style={{height: '20px', width: '100%',
-                 backgroundColor: `${card.room ? card.id === selected ? "orange" : "green" : "gray"}`,
-                 borderTop: `${card.up ? '1px solid red' : '1px solid transparent'}`,
-                 borderLeft: `${card.left ? '1px solid red' : '1px solid transparent'}`,
-                 borderRight: `${card.right ? '1px solid res' : '1px solid transparent'}`,
-                 borderBottom: `${card.down ? '1px solid red' : '1px solid transparent'}`
+        backgroundColor: `${card.room ? card.id === selected ? "orange" : "green" : "lightgray"}`,
+        borderTop: `${card.up ? '1px solid transparent' : card.room ? '1px solid red' : '1px solid transparent'}`,
+        borderLeft: `${card.left ? '1px solid transparent' : card.room ? '1px solid red' : '1px solid transparent'}`,
+        borderRight: `${card.right ? '1px solid transparent' : card.room ? '1px solid red' : '1px solid transparent'}`,
+        borderBottom: `${card.down ? '1px solid transparent' : card.room ? '1px solid transparent' : '1px solid transparent'}`
     }}>   
       {/* <div style={{display: 'flex', width: '100%'}}>
         <div style={{width: '30%', height: '30%', backgroundColor: 'transparent'}}></div>
