@@ -83,9 +83,16 @@ export default function Login(props)  {
                     style={( state.email && state.password)? {backgroundColor: "#85a688"}: {color: "red", backgroundColor: "lime", fontWeight: "bold", marginTop: "20px" }}>
 
                     Submit</button>
+<div>
+               <Bottom>Don't have an account?</Bottom>
+                <div>
+                    <Link to="/registration"><Signup>SIGN UP</Signup></Link>
+                </div>
+            </div>           
 
                 </form>
-            </div>
+
+             </div>
         )
     }
 
@@ -106,3 +113,18 @@ color: white;
 padding-top: 10px;
 font-family: "Press Start 2P", cursive;
 `;
+const Bottom = styled.h1`
+font-size: .7em;
+text-align: center;
+color: red;
+padding-top: 28px;
+font-family: "Press Start 2P", cursive;
+`;
+const Signup = styled.h1`
+font-size: .6em;
+text-align: center;
+color: red;
+padding-top: 5px;
+font-family: "Press Start 2P", cursive;
+`;
+

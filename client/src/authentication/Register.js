@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import styled from "styled-components";
+import {Link } from "react-router-dom"
 import dragon from "./reddragon.jpg"
 import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
@@ -86,6 +87,13 @@ export default function Register(props) {
               Create Account
             </button>
           </div>
+          <div>
+               <Bottom>Have an account already?</Bottom>
+                <div>
+                    <Link to="/login"><Login>LOG IN</Login></Link>
+                </div>
+            </div>           
+
         </form>
       </div>
     </div>
@@ -108,3 +116,18 @@ const Label = styled.h1`
   padding-top: 10px;
   font-family: "Press Start 2P", cursive;
 `;
+const Bottom = styled.h1`
+font-size: .7em;
+text-align: center;
+color: red;
+padding-top: 28px;
+font-family: "Press Start 2P", cursive;
+`;
+const Login = styled.h1`
+font-size: .6em;
+text-align: center;
+color: red;
+padding-top: 5px;
+font-family: "Press Start 2P", cursive;
+`;
+
