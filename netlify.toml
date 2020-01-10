@@ -1,5 +1,5 @@
 [build]
 
-  base = "CS-BUILD-WEEK-1-FE/"
+  base = "client/"
 
-  publish = "CS-BUILD-WEEK-1-FE/client/"
+  
