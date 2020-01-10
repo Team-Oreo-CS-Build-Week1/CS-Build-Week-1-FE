@@ -1,4 +1,4 @@
 [build]
-
-  base = "CS-BUILD-WEEK-1-FE/client/"
-
+base = "client/"
+publish = "build/"
+command = "npm run build"
